@@ -1,0 +1,270 @@
+body { 
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+#page-wrapper {
+    border: 1px solid green;
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold; 
+}
+
+header .menu ul {
+    font-weight: normal;
+    list-style: none;
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+}
+
+header .menu ul li {
+    display: inline;
+    margin: 0 auto;
+    padding: 10px 24px;
+    text-decoration: none;
+}
+
+.menu ul li:first-child {
+    margin-left: 0;
+}
+
+.rounded-image {
+    border-radius: 15px;
+    width: 100%;
+    height: 360px;
+    margin-top: 10px;
+}
+
+.styled-button {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 12px;
+    color: black;
+    background-color: transparent; 
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s; 
+}
+
+.styled-button:hover {
+    background-color: #aaabac; 
+    border-color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #000000; 
+}
+
+.card {
+    background-color: white; 
+    border-radius: 15px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
+    margin-bottom: 20px; 
+    flex: 1 1 calc(30% - 20px);
+    max-width: calc(30% - 20px);
+}
+
+.card img {
+    width: 100%;
+    max-height: 150px;
+    height: auto;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin: 15px;
+    color: black;
+}
+
+.card p {
+    margin: 0 15px 15px;
+    color: #666; 
+    line-height: 1.4; 
+}
+
+.work.process {
+    background-color: #E5E5E5; 
+    padding: 20px; 
+    border-radius: 15px; 
+}
+
+.work.process h2 {
+    text-align: left; 
+    margin-bottom: 20px; 
+    font-size: 16px;
+}
+
+.work.process .process-step {
+    margin: 15px 0; 
+}
+
+.work.process h3 {
+    margin: 0; 
+    color: #333; 
+    font-size: 24px;
+}
+
+.work.process p {
+    margin: 0; 
+    color: #333; 
+}
+
+.light-italic {
+    font-style: italic;
+    font-weight: 450;
+}
+
+.process-step {
+    position: relative; 
+}
+
+.circle {
+    display: inline-block; 
+    width: 30px; 
+    height: 30px; 
+    border-radius: 50%; 
+    background-color: transparent; 
+    border: 2px solid black; 
+    color: black; 
+    text-align: center; 
+    line-height: 30px; 
+    position: absolute; 
+    right: -2px; 
+    top: 30%; 
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+
+.divider {
+    border: none; 
+    border-top: 2px solid black; 
+    margin: 10px 0; 
+}    
+
+.get-in-touch {
+    padding: 20px;
+    color: white;
+    background-color: #282828;
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+}
+
+.get-in-touch h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+    width: 80%;
+    max-width: 400px; 
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b3b2b2; 
+    border-radius: 5px;
+    box-sizing: border-box;
+} 
+
+textarea {
+    resize: vertical;
+}
+
+.submit-button {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 2px solid white; 
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: transparent; 
+}
+
+.submit-button:hover {
+    background-color: #aaabac; 
+}
+
+.footer-row {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 12px;
+    background-color: #161515;
+    color: white;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%;
+    font-style: normal; 
+}
+
+.menu ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0;
+    display: flex;
+}
+
+.menu ul li {
+    margin-left: 15px; 
+    text-decoration: underline;
+}
+
+.menu ul li:first-child {
+    margin-left: 0; 
+}
+
+/* Desktop size ends here */
+
+/*Starts the size of the screen 768 and below*/
+
+@media screen (max-width: 768px) {
+    header {
+        padding 60px 20px 0px;
+        border: 1px solid black;
+    }
+}
